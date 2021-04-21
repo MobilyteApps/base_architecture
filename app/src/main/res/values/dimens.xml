@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region Text Sizes-->
+    <dimen name="base28sp">28sp</dimen>
+    <dimen name="base20sp">20sp</dimen>
+    <dimen name="base16sp">16sp</dimen>
+    <dimen name="base12sp">12sp</dimen>
+    <!--endregion-->
+
+
+    <dimen name="base16dp">16dp</dimen>
+    <dimen name="base8dp">8dp</dimen>
+    <dimen name="base4dp">4dp</dimen>
+    <dimen name="base10dp">10dp</dimen>
+    <dimen name="base32dp">32dp</dimen>
+
+    <dimen name="base12dp">12dp</dimen>
+    <dimen name="base24sp">24sp</dimen>
+    <dimen name="base32sp">32sp</dimen>
+    <dimen name="base22sp">22sp</dimen>
+    <dimen name="base18sp">18sp</dimen>
+    <dimen name="base14sp">14sp</dimen>
+    <dimen name="base120dp">120dp</dimen>
+    <dimen name="base100dp">100dp</dimen>
+    <dimen name="base30sp">30sp</dimen>
+    <dimen name="base15dp">15dp</dimen>
+    <dimen name="base25sp">25sp</dimen>
+    <dimen name="base2dp">2dp</dimen>
+    <dimen name="base5dp">5dp</dimen>
+    <dimen name="base17sp">17sp</dimen>
+    <dimen name="base21sp">21sp</dimen>
+    <dimen name="base20dp">20dp</dimen>
+    <dimen name="base0dp">0dp</dimen>
+    <dimen name="base1dp">1dp</dimen>
+    <dimen name="tabsHeight">45dp</dimen>
+    <dimen name="base160dp">160dp</dimen>
+    <dimen name="base25dp">25dp</dimen>
+    <!--App Dimen-->
+    <dimen name="inputCorner">15dp</dimen>
+    <dimen name="btnCorner">15dp</dimen>
+    <dimen name="btnHeight">65dp</dimen>
+    <dimen name="btnTextSize">18sp</dimen>
+    <dimen name="inputTextSize">16sp</dimen>
+    <dimen name="headingTextSize">32sp</dimen>
+    <dimen name="messageTextSize">18sp</dimen>
+    <dimen name="inputHeight">54dp</dimen>
+
+
+    <dimen name="base30dp">30dp</dimen>
+    <dimen name="base40dp">40dp</dimen>
+    <dimen name="view_padding_left">36dp</dimen>
+    <dimen name="view_padding_right">36dp</dimen>
+    <dimen name="view_padding_top">25dp</dimen>
+    <dimen name="views_elevation">2dp</dimen>
+    <dimen name="base18dp">18dp</dimen>
+    <dimen name="base54dp">54dp</dimen>
+    <dimen name="base9sp">9sp</dimen>
+    <dimen name="base250dp">250dp</dimen>
+    <dimen name="base200dp">200dp</dimen>
+    <dimen name="base170dp">170dp</dimen>
+    <dimen name="base6dp">6dp</dimen>
+    <dimen name="image_downsample_size">250dp</dimen>
+    <dimen name="base140dp">140dp</dimen>
+    <dimen name="base28dp">28dp</dimen>
+    <dimen name="base36dp">36dp</dimen>
+    <dimen name="base3dp">3dp</dimen>
+    <dimen name="base24dp">24dp</dimen>
+    <dimen name="base10sp">10sp</dimen>
+    <dimen name="base80dp">80dp</dimen>
+    <dimen name="base48dp">48dp</dimen>
+    <dimen name="category_rec_view_min_height">60dp</dimen>
+    <dimen name="base13dp">13dp</dimen>
+    <dimen name="alert_view_height">275dp</dimen>
+    <dimen name="alert_bg_image_height">150dp</dimen>
+    <dimen name="dashboard_user_image_size">45dp</dimen>
+    <dimen name="dashboard_alert_user_image_size">40dp</dimen>
+    <dimen name="base22dp">22dp</dimen>
+    <dimen name="alert_detail_user_image_size">45dp</dimen>
+    <dimen name="base50dp">50dp</dimen>
+    <dimen name="base90dp">90dp</dimen>
+    <dimen name="base26dp">26dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="base70dp">70dp</dimen>
+    <dimen name="height_match_constraints">0dp</dimen>
+    <dimen name="width_match_constraints">0dp</dimen>
+    <dimen name="base300dp">300dp</dimen>
+
+    <dimen name="base60dp">60dp</dimen>
+    <dimen name="base55dp">55dp</dimen>
+    <dimen name="base35dp">35dp</dimen>
+    <dimen name="base14dp">14dp</dimen>
+    <dimen name="base13sp">13sp</dimen>
+    <dimen name="base38dp">38dp</dimen>
+
+
+</resources>

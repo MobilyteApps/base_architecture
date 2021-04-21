@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "code": 200,
+  "message": "Request Successful!",
+  "data": [
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Love"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Photography"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Shopping"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Yoga"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Cooking"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Run"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Entertainment"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Chating"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Tennis"
+    },
+    {
+      "selected": false,
+      "id": "1",
+      "name": "Cricket"
+    }
+  ]
+}

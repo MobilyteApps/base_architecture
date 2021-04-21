@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.baseappname.app.ui.landing.LandingFragmentViewModel" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout style="@style/view_main_coordinator_style">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--region Guidelines-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glh_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glh_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glh_44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".44" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glh_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".95" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glv_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glv_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".9" />
+            <!--endregion-->
+
+            <!--region Logo View-->
+            <ImageView
+                android:id="@+id/iv_logo_landing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_logo_landing"
+                app:layout_constraintEnd_toEndOf="@+id/glv_90"
+                app:layout_constraintStart_toStartOf="@+id/glv_10"
+                app:layout_constraintTop_toTopOf="@+id/glh_10" />
+            <!--endregion-->
+            <!--region App Name View-->
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#444444"
+                android:textSize="29sp"
+                app:layout_constraintEnd_toEndOf="@+id/glv_90"
+                app:layout_constraintStart_toStartOf="@+id/glv_10"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo_landing" />
+            <!--endregion-->
+            <!--region Heading View-->
+            <TextView
+                android:id="@+id/tv_welcome_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Welcome to Base app"
+                android:textColor="#444444"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/glv_90"
+                app:layout_constraintStart_toStartOf="@+id/glv_10"
+                app:layout_constraintTop_toBottomOf="@+id/glh_40" />
+            <!--endregion-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/glh_95"
+                app:layout_constraintEnd_toEndOf="@+id/glv_90"
+                app:layout_constraintStart_toStartOf="@+id/glv_10"
+                app:layout_constraintTop_toBottomOf="@+id/glh_44">
+
+                <!--region Email Login Button-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btnContinueEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/base48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_continue_with_email_btn"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:onSingleClick="@{()->viewModel.onClickLoginButton()}">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glEmailStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/ic_icon_email"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/glEmailStart"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Continue with email"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/base16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/glEmailStart"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--endregion-->
+
+                <!--region Email Sign Up Button-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btnSignUpEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/base48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_create_ac_btn"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnContinueEmail"
+                    app:onSingleClick="@{()->viewModel.onClickSignUpButton()}">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glSignUpStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/ic_icon_user"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/glSignUpStart"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Create an account"
+                        android:textAllCaps="false"
+                        android:textColor="#F53942"
+                        android:textSize="@dimen/base16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/glSignUpStart"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <!--endregion-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--region Term View-->
+            <TextView
+                android:id="@+id/tv_term_and_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Terms of use and Privacy Policy"
+                android:textColor="#444444"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/glv_90"
+                app:layout_constraintStart_toStartOf="@+id/glv_10"
+                app:layout_constraintTop_toBottomOf="@+id/glh_95" />
+            <!--endregion-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
